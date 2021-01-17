@@ -1,0 +1,58 @@
+/*-----------Designing-----------*/
+.topic{
+    height: 850px;
+    background-image: url(images/pps.png);
+    background-repeat: no-repeat;
+    margin: -10px -10px;
+}
+.topic #right {
+    float: right;
+    position: relative;
+    background-color: slategrey;
+    height: 120px;
+    width: 30%;
+    margin-right:5%;
+    opacity: 0.7;
+    color: black;
+    text-align: center;
+    padding-top: 2.8%;
+    font-size: 200%;
+    font-weight: 800;
+    animation: right 0.8s forwards;
+    animation-delay: 0.3s;
+}
+.topic #left {
+    float: left;
+    position: relative;
+    background-color: slategrey;
+    height: 120px;
+    width: 30%;
+    margin-left: 5%;
+    opacity: 0.7; 
+    color: black;
+    text-align: center;
+    padding-top: 2.8%;
+    font-size: 200%;
+    font-weight: 800;
+    animation: left 0.8s forwards;
+    animation-delay: 0.3s;
+}
+
+/*-----------Animation-----------*/
+@keyframes left{
+    from {left: 0px;}
+    to {left: 80px;}
+}
+@keyframes right{
+    from {right: 0px;}
+    to {right: 80px;}
+}
+
+/*-----------Hover Effect-----------*/
+#left:hover{
+    transform: scale(1.15); 
+}
+#right:hover{
+    transform: scale(1.15); 
+}
+
